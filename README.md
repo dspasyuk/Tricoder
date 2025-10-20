@@ -1,5 +1,6 @@
 # ESP32-based Spectrometer (Tricorder)
-<img width="1756" height="946" alt="Screenshot from 2025-10-19 20-13-14" src="https://github.com/user-attachments/assets/49617633-6463-4daa-8cc1-087ccfde5577" />
+<img width="1876" height="958" alt="image" src="https://github.com/user-attachments/assets/883b8ced-9c39-4042-a934-771675de8c6b" />
+
 
 This project turns an ESP32 and a DFRobot AS7341 spectral sensor into a web-based spectrometer. It reads spectral data, processes it, and displays it as a smooth curve on a web interface.
 
