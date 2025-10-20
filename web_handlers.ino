@@ -5,7 +5,7 @@ void startAPMode() {
   Serial.println("Starting Access Point mode...");
   apMode = true;
   WiFi.mode(WIFI_AP);
-  WiFi.softAP("Tricoder", "12345678");
+  WiFi.softAP("Tricorder", "12345678");
   Serial.println("AP Started");
   Serial.print("AP IP address: ");
   Serial.println(WiFi.softAPIP());

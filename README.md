@@ -1,5 +1,4 @@
-# ESP32-based Spectrometer (Tricoder)
-<img width="1756" height="946" alt="image" src="https://github.com/user-attachments/assets/45fde310-2ec9-4dc7-93dc-474822f838de" />
+# ESP32-based Spectrometer (Tricorder)
 
 This project turns an ESP32 and a DFRobot AS7341 spectral sensor into a web-based spectrometer. It reads spectral data, processes it, and displays it as a smooth curve on a web interface.
 
@@ -18,8 +17,7 @@ This project turns an ESP32 and a DFRobot AS7341 spectral sensor into a web-base
     *   Allows saving and resetting WiFi credentials.
 *   **Configuration Persistence:** Saves WiFi and device settings to non-volatile storage.
 
-## Hardware and basic wiring
-<img width="541" height="603" alt="image" src="https://github.com/user-attachments/assets/9d9d6632-14bb-4c15-b4d8-68b0a3c27da9" />
+## Hardware
 
 *   **Microcontroller:** ESP32
 *   **Sensor:** DFRobot AS7341 Visible Light Sensor
@@ -28,7 +26,7 @@ This project turns an ESP32 and a DFRobot AS7341 spectral sensor into a web-base
 
 1.  **First Boot (AP Mode):**
     *   On the first boot, or if no WiFi credentials are saved, the device will start in Access Point (AP) mode.
-    *   Connect to the WiFi network created by the ESP32 (the SSID will be "Tricoder-XXXX").
+    *   Connect to the WiFi network created by the ESP32 (the SSID will be "Tricorder-XXXX").
     *   Open a web browser and navigate to `192.168.4.1`.
     *   Go to the "Config" page, enter your WiFi credentials, and save. The device will then restart and connect to your network.
 

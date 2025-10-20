@@ -20,7 +20,7 @@ extern unsigned int accumulationTime;
 extern const int interpolationPoints;
 extern float interpolatedSpectrum[100][2];
 
-// Function declarations from tricoder.ino
+// Function declarations from tricorder.ino
 void readAndAccumulate();
 void generateInterpolatedSpectrum();
 float getInterpolatedValue(float wavelength);

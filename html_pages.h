@@ -7,7 +7,7 @@ const char MAIN_PAGE_START[] PROGMEM = R"rawliteral(
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tricoder</title>
+  <title>Tricorder</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f2f5; margin: 0; }
@@ -34,7 +34,7 @@ const char MAIN_PAGE_START[] PROGMEM = R"rawliteral(
 </head>
 <body>
   <nav class="navbar">
-    <div class="navbar-brand">Tricoder</div>
+    <div class="navbar-brand">Tricorder</div>
     <div class="navbar-menu">
       <div id="color-swatch" title="Estimated Color"></div>
       <div class="form-group">
@@ -118,7 +118,7 @@ const char MAIN_PAGE_END[] PROGMEM = R"rawliteral(</div>
           feature: {
             dataZoom: { yAxisIndex: 'none', title: { zoom: 'Area Zoom', back: 'Restore Zoom' } },
             dataView: { readOnly: false, title: 'View Data', lang: ['Data View', 'Close', 'Refresh'] },
-            saveAsImage: { name: 'tricoder_spectrum', title: 'Save as Image', type: 'svg' }
+            saveAsImage: { name: 'tricorder_spectrum', title: 'Save as Image', type: 'svg' }
           }
         },
         xAxis: {
@@ -321,7 +321,7 @@ const char MAIN_PAGE_END[] PROGMEM = R"rawliteral(</div>
         return;
       }
 
-      let fileContent = '# Tricoder Spectrum Data\n';
+      let fileContent = '# Tricorder Spectrum Data\n';
       scanHistory.forEach((scan, index) => {
         fileContent += `\n# --- Scan ${index + 1} at ${scan.timestamp.toISOString()} ---\n`;
         fileContent += '# Raw Sensor Channels\n';
@@ -336,7 +336,7 @@ const char MAIN_PAGE_END[] PROGMEM = R"rawliteral(</div>
       const link = document.createElement('a');
       link.href = URL.createObjectURL(blob);
       const timestamp = new Date().toISOString().replace(/[:.-]/g, '');
-      link.download = `tricoder_multiscan_${timestamp}.txt`;
+      link.download = `tricorder_multiscan_${timestamp}.txt`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
