@@ -18,7 +18,8 @@ This project turns an ESP32 and a DFRobot AS7341 spectral sensor into a web-base
     *   Allows saving and resetting WiFi credentials.
 *   **Configuration Persistence:** Saves WiFi and device settings to non-volatile storage.
 
-## Hardware
+## Hardware and basic wiring
+<img width="541" height="603" alt="image" src="https://github.com/user-attachments/assets/9d9d6632-14bb-4c15-b4d8-68b0a3c27da9" />
 
 *   **Microcontroller:** ESP32
 *   **Sensor:** DFRobot AS7341 Visible Light Sensor
